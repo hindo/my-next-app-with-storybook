@@ -1,0 +1,42 @@
+import { TwButton } from "../components/TWButton";
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Example/TwButton/Summary" />
+
+<style>{`
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justifi-content: center;
+    gap: 1rem;
+  }
+
+  .section {
+    display: flex;
+    gap: 1rem;
+  }
+`}</style>
+
+<div className="body">
+  <div className="section">
+    <TwButton intent="primary" size="large">
+      Test
+    </TwButton>
+    <TwButton intent="secondary" size="large">
+      Test
+    </TwButton>
+  </div>
+  <div className="section">
+    <TwButton intent="primary">Test</TwButton>
+    <TwButton intent="secondary">Test</TwButton>
+  </div>
+  <div className="section">
+    <TwButton intent="primary" size="small">
+      Test
+    </TwButton>
+    <TwButton intent="secondary" size="small">
+      Test
+    </TwButton>
+  </div>
+</div>
